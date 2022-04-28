@@ -6,7 +6,7 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link href="<c:url value='resources/css/style.css' />" rel="stylesheet">
+<link href="<c:url value='/resources/css/style.css' />" rel="stylesheet">
 <link href="resources/css/style.css" rel="stylesheet"/>
 <link href="<c:url value='resources/css/style.css'/>" rel="stylesheet">
 <style>

@@ -40,7 +40,7 @@ public class StudentsEntity {
 
 	@ManyToOne
 	@JoinColumn(name = "MajorId")
-	public MajorsEntity major;
+	private MajorsEntity major;
 
 	@OneToMany(mappedBy = "student", fetch = FetchType.EAGER)
 	public Collection<MarksEntity> marks;

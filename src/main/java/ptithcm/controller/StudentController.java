@@ -49,7 +49,9 @@ public class StudentController {
 	@RequestMapping(value="add", method=RequestMethod.POST)
 	public String add(HttpServletRequest request, ModelMap model,
 			@ModelAttribute("student") StudentsEntity student) {
-		
+		student.getMajor().setId("DOM");
+		System.out.println();
+		System.out.println(student.getMajor().getName());
 		Integer temp = this.addStudent(student);
 		if(temp != 0) {
 			model.addAttribute("message", "them thanh cong");
